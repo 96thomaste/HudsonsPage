@@ -11,8 +11,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+<!--  <link rel="stylesheet" href="css/normalize.css">-->
+<!--  <link rel="stylesheet" href="css/main.css">-->
+  <link rel="stylesheet" href="css/stylesheet.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,15 +28,38 @@
   <article id="page">
     <header>
       <h1>Tutoring Computer Science in the Boise Area</h1>
-      <nav>
-        <ul style="display : grid; grid-template-rows: 1fr">
-          <li><a href='#'>Services</a></li>
-          <li><a href='#'>About Me</a></li>
-          <li><a href='#'>Pricing</a></li>
-          <li><a href='#'>Contact</a></li>
+      <nav class="navbar">
+        <div class="logo">
+          <span style="margin-right: 10px; font-size: 1.3em;">Hudson Hughes</span><img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="Hudsons logo">
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#about">About Me</a></li>
+          <li class="nav-item"><a href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <div id="content">
+      <section>
+        <div class="split-in-half">
+          <div class="half" id="auto-scrolling-images" style="background: fuchsia">
+            <img src="https://via.placeholder.com/800x600.png?text=Todo+Put+A+Picture+of+me+tutoring+Franscisco" alt="A Photo of Me" />
+            <br>
+            <a>fdf</a>
+          </div>
+          <div class="half" style="background: burlywood;">
+            <h2>Teaching Computer Science in the Boise Area</h2>
+            <ul>
+              <li><p>High school student learning how to code</p></li>
+              <li><p>College sophomore needing help with Java homework</p></li>
+              <li><p>Professional that wants to gain a new skill</p></li>
+              <li><p></p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </article>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
