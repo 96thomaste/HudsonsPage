@@ -14,7 +14,7 @@ body {
 
 nav {
   width: 100%;
-  background-color: darkgreen;
+  background-color: #4ECDC4;
   padding-left: 30px;
   padding-right: 10px;
 }
@@ -49,6 +49,7 @@ nav {
 
 .navbar {
   display: flex;
+  z-index: 999;
 }
 
 .navbar {
@@ -75,10 +76,6 @@ nav {
   margin: 0 auto;
 }
 
-section {
-
-}
-
 .auto-scrolling-images{
 
 }
@@ -96,7 +93,7 @@ ul {
   padding: 20px;
 }
 
-section {
+#surrounding {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   grid-gap: 1rem;
@@ -168,4 +165,30 @@ section {
   padding-bottom: 20px;
 }
 
+#slider {
+  overflow: hidden;
+}
 
+@keyframes slider {
+  0% { left: 0; }
+  30% { left: 0; }
+  33% { left: -100%; }
+  63% { left: -100%; }
+  66% { left: -200%; }
+  95% { left: -200%; }
+  100% { left: 0; }
+}
+#slider figure {
+  width:300%;
+  position: relative;
+  animation: 21s slider infinite;
+}
+
+#slider figure:hover {
+  /*animation-play-state: paused; enable for pause on hover*/
+}
+#slider figure img {
+  width: 33.333333333%;
+  height : 100%;
+  float: left;
+}
